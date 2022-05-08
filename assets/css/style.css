@@ -1,5 +1,8 @@
 /* CSS para a página principal - Chuva.inc */
 
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
 /* Setando os valores defauts */
 .{
     margin: 0px;
@@ -21,13 +24,6 @@ h3{
     text-align: center;
     color: #FFFFFF;
     padding: 9px;
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #ffffff;
-    
 }
 
 #wrapper {
@@ -61,6 +57,7 @@ ul ul a {
     background: #ffffff;
     color: #fff;
     transition: all 0.3s;
+    box-shadow: 6px 0px 14px 5px rgba(0,0,0,0.27);
 }
 
 #sidebar .sidebar-header {
@@ -85,28 +82,63 @@ ul ul a {
     color: #fff;
     padding: 10px;
 }
+ul li{
+    border: #725C5C;
+}
 
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
+ul li a {
+    padding: 5px 20px 10px 20px;
     display: block;
-    
-}
-#sidebar ul li a:hover {
-    color: #fffff;
-    background: #fff;
-}
-
-#sidebar ul li.active > a, {
-    color: #fff;
-    background: #ffffff;
+    margin-left: 5px;
     font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
     line-height: 19px;
-    color: #725C5C;
+    color: #725C5C;    
 }
+
+#selecionado{ /*Página atual */
+    Width: 5px;
+    Height:33px;
+    position: relative;
+    left: 0%;
+    right: 97.73%;
+    top: 0%;
+    bottom: 5.71%;
+    background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+}
+
+
+/* Manter os links do sidemenu com o mesmo efeito */
+ul li:hover{
+    background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+}
+
+ul li a:hover {
+    color: #ffffff !important;
+    text-decoration: none;    
+    padding: 5px 20px 10px 20px;
+    display: block;
+    margin-left: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    }
+ul li a:visited{
+    text-decoration: none;    
+    padding: 5px 20px 10px 20px;
+    display: block;
+    margin-left: 5px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #725C5C; 
+}    
 
 /* Media queries */
 @media (max-width: 768px) {
