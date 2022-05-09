@@ -5,16 +5,12 @@
 
 /* Setando os valores defauts */
 .{
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
+    margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
     background-color: #ffffff;
-    padding: 0px;
 }
 
 h3{
@@ -35,6 +31,7 @@ h3{
     width: 100%;
     align-items: stretch;
     display: flex;
+    align-items: stretch;
 }
 
 /*********************/
@@ -43,35 +40,13 @@ h3{
     display: none;
 }
 
-/* Toda a parte do header: título, menu e login */
 header{
     width: 100%;
     height: 68px;
-    max-height: 68px;
-    background-color: #271811;
-    display: inline-block;    
-}
-
-header div{
-    display: inline-block;
-}
-
-
-#titulo{
-    background-color: #ED7839;
-    width: 80%;
-    height: 100%;
-    padding-left: 260px;    
-}
-
-header #titulo p{
-    margin: 0px;
-}
-
-#perfil{
-    Width: 211px;
-    Height: 100%;
-    background-color: #ee3aa3;
+    width: 100%;
+    margin-left: 220px;
+    background-color: #FDF1EB;
+    padding-left: 20px;
 }
 
 /* Menu no modo responsivo */
@@ -110,7 +85,6 @@ header #titulo p{
     color: #fff;
     transition: all 0.3s;
     box-shadow: 6px 0px 14px 5px rgba(0,0,0,0.27);
-    display: none;
 }
 
 #sidebar .sidebar-header {
@@ -236,12 +210,6 @@ ul li a:visited{
         width: 100%;
         margin-left: 0px;
         padding-left: 20px;
-        padding-right: 20px;
         background-color: #FDF1EB;
-        text-align: center;
-    }
-    #titulo{
-        padding-top: 10px;
-        max-width: 100%;
     }
 }

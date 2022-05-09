@@ -93,12 +93,10 @@
         <!-- Conteúdo -->
         <header>
             <div id="titulo">
-                Texto Teste
-            </div>
-            <div id="perfil">
-
+                <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
             </div>
         </header>
+        
     
 
     <!-- JS Bootstrap -->
@@ -120,17 +118,12 @@
         return;
         });
 
-        //Ações para esconder alguns elementos na função mobile
+        //Sempre que a dimensão da tela mudar, checar status do menu e, caso ele esteja ativo, mudar o display para 'none'
         document.body.onresize = function(){
-        let title = document.getElementById('titulo-maior'); //Esconder o título maior do topo
-        if (document.body.clientWidth > 768) {
-        sidemenu.style.display = 'none'; //Esconder o sidemenu mobile para a versão desktop
+    if (document.body.clientWidth > 768) {
+        sidemenu.style.display = 'none';
         showmenu = 1;
-        title.style.display = 'block';
     }
-        else{
-            title.style.display = 'none';
-        }
 };
     </script>
 </body>
