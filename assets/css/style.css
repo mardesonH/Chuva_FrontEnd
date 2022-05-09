@@ -36,7 +36,7 @@ h3{
 
 /*********************/
 
-#menu{ /* Não exibir em modo desktop */
+#top-menu{ /* Não exibir em modo desktop */
     display: none;
 }
 
@@ -140,9 +140,26 @@ ul li a:visited{
     color: #725C5C; 
 }    
 
+#menu{
+    padding-bottom: auto;
+    padding-left: 10px;
+    max-width: 80px;
+    max-height: 80px;
+    position: absolute;
+    text-align: right;
+}
+
+#menu a{
+    color: #fff;
+}
+
+#menu a:hover{
+    color: #FFFFFF;
+}
+
 /* Media queries */
 @media (max-width: 768px) {
-    #menu{ /* Exibir o menu do topo */
+    #top-menu{ /* Exibir o menu do topo */
         display: block;
         width: 100%;
         height: 68px;
@@ -157,7 +174,6 @@ ul li a:visited{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
         font-size: 30px;
     }
-
     #sidebar { /* Esconder sidebar */
         margin-left: -250px;
     }

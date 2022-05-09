@@ -13,12 +13,24 @@
     <!-- JS Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    
 </head>
 <body>
     <div class="wrapper">
         <!-- Menu no topo para o modo responsivo -->
-        <div id="menu">
+        <div id="top-menu">
+            <div id="menu">
+                <a href="#" id="chamar-menu"><svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 17V15H13V17H5Z" fill="currentColor" />
+                <path d="M5 9V7H13V9H5Z" fill="currentColor" />
+                <path d="M5 12.9999V10.9999H14.9999V7.96454L19.071 11.9644L14.9999 15.9644V12.9999H5Z"
+                  fill="currentColor"/>
+              </svg></a></div>
             SLACA 2019
         </div>
 
@@ -49,10 +61,22 @@
                 </li>
             </ul>
         </nav>
-
+        
     
 
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    
+    <script>
+        //Botão do menu ser clicável e chamar o sidemenu com as opções, sem a img
+
+        let sidemenu = document.getElementById('sidebar');
+        let menu = document.getElementById('chamar-menu');
+        menu.addEventListener('click', function(){
+            window.alert("Clicou!")
+        });
+
+
+    </script>
 </body>
 </html>
