@@ -40,13 +40,40 @@ h3{
     display: none;
 }
 
-#header{
-    max-width: 1146px;
-    max-height: 68px;
+header{
+    width: 100%;
+    height: 68px;
     width: 100%;
     margin-left: 220px;
-    background-color: #EE7A3A;
+    background-color: #FDF1EB;
+    padding-left: 20px;
 }
+
+/* Menu no modo responsivo */
+#sidemenu {
+    color: #ED7839;
+    display: none;
+    min-width: 220px;
+    max-width: 220px;
+    position: fixed;
+    min-height: 100vh;
+    background: #ffffff;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 6px 0px 14px 5px rgba(0,0,0,0.27);
+}
+
+#sidemenu h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    text-align: center;
+    color: #FFB354;
+    padding: 9px;
+    }
 
 /* Style da sidebar */ 
 #sidebar {
@@ -176,5 +203,13 @@ ul li a:visited{
     }
     #sidebar { /* Esconder sidebar */
         margin-left: -250px;
+    }
+    header{
+        width: 100%;
+        height: 68px;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 20px;
+        background-color: #FDF1EB;
     }
 }
