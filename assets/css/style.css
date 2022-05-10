@@ -43,98 +43,14 @@ h3{
 header{
     width: 100%;
     height: 68px;
+<<<<<<< HEAD
     max-height: 68px ;
+=======
+>>>>>>> parent of 97813a5 (Adição do título do artigo e do menu de idiomas. Atenção: corrigir erro de redimensionamento)
     width: 100%;
     margin-left: 220px;
     background-color: #FDF1EB;
-}
-
-.simposio{
-    display: inline-block;
-    vertical-align: top;
-}
-
-
-#simposio{
-    height: 68px;
-    max-height: 68px;
-    max-width: 80%;
-}
-
-#simposio p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #725C5C;
-    padding-left: 36px;
-    padding-top: 5px;
-    padding-bottom: 0px;
-    margin-bottom: 2px;
-}
-
-#simposio p:nth-child(2){
-    font-size: 22px;
-    line-height: 26px;
-    margin: 0px;
-    padding-top: 0px;
-    margin: 0px;
-}
-
-#simposio p:nth-child(3){
-    font-size: 14px;
-    line-height: 16px;
-    margin: 0px;
-    padding-top: 0px;
-    margin: 0px;
-}
-
-#idioma-menu{
-    display: none;
-}
-
-#idioma{
-    width: 97px;
-    height: 34px;
-    vertical-align: middle;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border: 1px solid #CCCCCC;
-    border-radius: 3px;
-    text-align: right;
-}
-
-#lang-symbol{
-    height: 22px;
-    width: 22px;
-    position: relative;
-    vertical-align: middle;
-    
-}
-
-select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 0px;
-    font-size: 14px;
-    padding-right: 20px;    
-    text-align: right;
-    display: inline-block;
-}
-
-#vazio{
-    width: 80px;
-    height: 34px;
-    vertical-align: middle;
-    position: relative;
-}
-
-#topmenu div{
-    display: inline-block;
+    padding-left: 20px;
 }
 
 /* Menu no modo responsivo */
@@ -151,10 +67,6 @@ select {
     box-shadow: 6px 0px 14px 5px rgba(0,0,0,0.27);
 }
 
-#sidemenu div{
-    display: block;
-}
-
 #sidemenu h3{
     font-family: 'Roboto';
     font-style: normal;
@@ -167,11 +79,7 @@ select {
     padding: 9px;
     }
 
-#photo-menu{
-    border-radius: 15px;
-}    
-
-/* Style da sidebar - Modo Desktop */ 
+/* Style da sidebar */ 
 #sidebar {
     min-width: 220px;
     max-width: 220px;
@@ -181,10 +89,6 @@ select {
     color: #fff;
     transition: all 0.3s;
     box-shadow: 6px 0px 14px 5px rgba(0,0,0,0.27);
-}
-
-#sidebar div{
-    display: block;
 }
 
 #sidebar .sidebar-header {
@@ -284,6 +188,7 @@ ul li a:visited{
     color: #FFFFFF;
 }
 
+<<<<<<< HEAD
 .titulo{
     display: inline-block;
     vertical-align: top;
@@ -305,28 +210,9 @@ main{
     background-color: #FDF1EB;
 }
 
+=======
+>>>>>>> parent of 97813a5 (Adição do título do artigo e do menu de idiomas. Atenção: corrigir erro de redimensionamento)
 /* Media queries */
-@media (max-width: 1080px) {
-    #simposio p:nth-child(2){
-        font-size: 16px;
-    }
-
-#idioma-menu{ /* Idioma aparecer no menu caso a largura mude */
-    display: block;
-}
-
-#idioma{
-    display: none;
-}
-}
-
-@media (max-width: 800px) {
-    #simposio p:nth-child(2){
-        font-size: 14px;
-    }
-}
-
-
 @media (max-width: 768px) {
     #top-menu{ /* Exibir o menu do topo */
         display: block;
@@ -346,11 +232,6 @@ main{
     #sidebar { /* Esconder sidebar */
         margin-left: -250px;
     }
-
-    #sidemenu div{
-        display: block;
-    }
-
     header{
         width: 100%;
         height: 68px;
