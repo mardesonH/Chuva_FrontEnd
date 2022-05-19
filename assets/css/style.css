@@ -1092,6 +1092,7 @@ footer a:nth-child(2){
         align-items: center;
         text-align: center;
         justify-content: center;
+        margin-top: 25px;
     }
 
     .download{
