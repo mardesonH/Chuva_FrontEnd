@@ -31,7 +31,8 @@
                 <path d="M5 9V7H13V9H5Z" fill="currentColor" />
                 <path d="M5 12.9999V10.9999H14.9999V7.96454L19.071 11.9644L14.9999 15.9644V12.9999H5Z"
                   fill="currentColor"/>
-              </svg></a></div>
+              </svg></a>
+            </div>
             <p>SLACA 2019</p>
         </div>
 
@@ -63,7 +64,7 @@
         </nav>
 
         <!-- Sidebar no modo Desktop  -->
-        <nav id="sidebar">
+        <aside id="sidebar">
             <div class="sidebar-header">
                 <h3>SLACA 2019</h3>
             </div>
@@ -88,7 +89,61 @@
                     <a href="#">Autores</a>
                 </li>
             </ul>
-        </nav>
+        </aside>
+
+        <header>
+            <div id='evento'><p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+            <h3>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
+            <p>ISSN: 1234-5678</p>
+            </div>
+            <div id="leng">
+                <button>
+                <img class="leng-img" src="assets/imgs/language-image.png">
+                <span>PT, BR&#160;</span>
+                <img src="./assets/imgs/dropdown.png">
+              </button>
+            </div>
+            <div id="login">
+              <a href="#"><p id="login-welcome">Bem vindo!</p></a>
+              <a href="#"><p id="login-email">alguem12@galoascience.com</p></a>
+            </div>
+            <div id="perfil-foto">
+                <img src="assets/imgs/perfil-foto.png">
+                <p id="notification">&nbsp;2</p>
+            </div>
+        </header>
+        <main-title>
+            <div id="titulo">
+                Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP
+            </div>
+            <div id="download">
+                <p><img src="assets/imgs/download.png" style="width: 19px; height: 19px;"> Download</p>
+            </div>  
+            <div id="favorite">
+                <img src="assets/imgs/favorite.png">
+            </div>
+            <div id="doi">
+                <img src="assets/imgs/doi.png">
+            </div>
+        </main-title>
+
+        <!-- Botões no modo responsivo -->
+        <div id="buttons-resp">
+            <div class="download">
+                <p><img src="assets/imgs/download.png" style="width: 19px; height: 19px;"> Download</p>
+            </div>  
+            <div class="favorite">
+                <img src="assets/imgs/favorite.png">
+            </div>
+            <div class="doi">
+                <img src="assets/imgs/doi.png">
+            </div>
+        </div>
+
+        <section id="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+            
         
     
 
@@ -113,7 +168,7 @@
 
         //Sempre que a dimensão da tela mudar, checar status do menu e, caso ele esteja ativo, mudar o display para 'none'
         document.body.onresize = function(){
-    if (document.body.clientWidth > 768) {
+        if (document.body.clientWidth > 768) {
         sidemenu.style.display = 'none';
         showmenu = 1;
     }
