@@ -126,7 +126,8 @@
                 <img src="assets/imgs/doi.png">
             </div>
         </main-title>
-
+        
+        
         <!-- Botões no modo responsivo -->
         <div id="buttons-resp">
             <div class="download">
@@ -139,12 +140,68 @@
                 <img src="assets/imgs/doi.png">
             </div>
         </div>
-
         <section id="video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ys6jjoNDbPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-            
         
+        <section id="resumo">
+            <p id="resumo-title">Resumo</p>
+            <div id="resumo-content-simple">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, provident. Qui ea ullam repellendus tempore placeat labore consequuntur cum, earum dolores, ipsum provident et illo odit suscipit. Iure, sed? Commodi ipsam labore ullam mollitia rerum totam dolorem repellat consequuntur omnis culpa, rem exercitationem ex animi quod corporis itaque natus corrupti, repudiandae deleniti sapiente recusandae minus officia nobis nisi. Saepe quidem eum dolore cumque, atque tenetur labore omnis fuga. Cum in omnis ratione a inventore similique autem odit earum eius facilis? Inventore doloribus architecto molestiae assumenda voluptate, minus eaque! Obcaecati, ab...<span style="color: #ED7839"> ver mais</span></p>
+            </div>
+            <div id="resumo-content-full"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, provident. Qui ea ullam repellendus tempore placeat labore consequuntur cum, earum dolores, ipsum provident et illo odit suscipit. Iure, sed? Commodi ipsam labore ullam mollitia rerum totam dolorem repellat consequuntur omnis culpa, rem exercitationem ex animi quod corporis itaque natus corrupti, repudiandae deleniti sapiente recusandae minus officia nobis nisi. Saepe quidem eum dolore cumque, atque tenetur labore omnis fuga. Cum in omnis ratione a inventore similique autem odit earum eius facilis? Inventore doloribus architecto molestiae assumenda voluptate, minus eaque! Obcaecati, ab.</p>
+                <p>Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.</p>
+                <p>Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.</p>
+                <p>Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span style="color: #ED7839"> ver mais</span> </p>
+            </section>
+
+        <!-- Sessão de discussões com DIVs que variam quanto ao display -->
+        <section id="discussao">
+            <p id="discussao-title">Discussões</p>
+            <div id="criar-post">
+            <p id="compartilhe">Compartilhe suas ideias ou dúvidas com os autores!</p>
+            <div id="disc-imgs"><img src="assets/imgs/disc1.png"><img src="assets/imgs/disc2.png"><img src="assets/imgs/disc3.png"></div>
+            <p id="info">Sabia que o maior estímulo do desenvolvimento científico e cultural é a curiosidade? </br>Deixe seus questionamentos ou sugestões para o autor!</p>
+            <div id="criar"><img src="assets/imgs/criar.png"> criar tópico</div>
+        </div>
+
+            <div id="formulario">
+            <p id="orient">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+            <form class="form-input">
+                <label for="title">Assunto</label>
+                <input
+                  id="title"
+                  name="title"
+                  type="text"
+                  placeholder="Defina um tópico sucinto para notificar os autores..."
+                  required
+                />
+                <label for="comment">Conteúdo</label>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  rows="4"
+                  required
+                ></textarea>
+                
+                <div class="submit-line">
+                  <p>&nbsp;</p>
+                  <div class="form-button" id="enviar">Enviar</div>
+                </div>
+              </form>
+              </div>
+
+            <div id="enviado">
+                <p>Seu tópico foi enviado com sucesso! :D</p>
+                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                <p><img src="assets/imgs/enviado.png"></p>
+                <p>Descubra outros trabalhos!</p>
+                <p>Aguardando feedback dos autores</p>
+                <p>Editar tópico</p>
+            </div>
+        </section>
+        <!-- Fim da sessão de discussões -->
+
     
 
     <!-- JS Bootstrap -->
@@ -173,6 +230,48 @@
         showmenu = 1;
     }
 };
+
+    //Scripts com listeners para alternar entre as DIVs da sessão DISCUSSÕES
+    var a1 = document.getElementById('resumo');
+    var resumo_simples = document.getElementById('resumo-content-simple')
+    var resumo_completo = document.getElementById('resumo-content-full')
+    let cont = 1;
+    a1.addEventListener('click', function(){
+        cont ++;
+    if(cont % 2 == 0){
+        resumo_simples.style.display = 'none';
+        resumo_completo.style.display = 'block';
+
+    }
+    else{
+        resumo_simples.style.display = 'block';
+        resumo_completo.style.display = 'none';
+    }
+        
+    })
+    var criar = document.getElementById('criar-post');
+    var formulario = document.getElementById('formulario');
+    var criarpost = document.getElementById('criar');
+    var novopost = false;
+    criarpost.addEventListener('click',function(){
+        novopost = true;
+        if(novopost == true){
+            formulario.style.display = 'block';
+            criar.style.display = 'none';
+        }
+    });
+
+    let enviar = document.getElementById('enviar');
+    let enviado = document.getElementById('enviado')
+    let formu = document.getElementById('formulario');
+    let contenviado = false;
+    enviar.addEventListener('click',function(){
+        contenviado = true;
+        if(contenviado == true){
+            formu.style.display = 'none';
+            enviado.style.display = 'block'
+        }
+    })
     </script>
 </body>
 </html>
