@@ -127,7 +127,7 @@
             </div>
         </main-title>
         
-        
+
         <!-- Botões no modo responsivo -->
         <div id="buttons-resp">
             <div class="download">
@@ -196,11 +196,57 @@
                 <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
                 <p><img src="assets/imgs/enviado.png"></p>
                 <p>Descubra outros trabalhos!</p>
+                <div id="novo">criar novo tópico</div>
                 <p>Aguardando feedback dos autores</p>
                 <p>Editar tópico</p>
             </div>
         </section>
         <!-- Fim da sessão de discussões -->
+
+        <section id="forum">
+            <div id="msg1">
+                <div id="msg1-title">
+                    Assunto da pergunta aparece aqui</div>
+                <div id="msg1-author">
+                    Carlos Henrique Santos
+                </div>
+                <div id="msg1-text">
+                   <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                </div>
+                <div id="like">
+                    <img src="./assets/imgs/more.png">
+                    <img id="btn-like" src="assets/imgs/like.png">
+                    <p id="valor-likes">1 like</p>
+                    <p>1 resposta</p>
+                </div>
+            </div>
+
+            <div id="msg2">
+                <div id="msg2-title">
+                    Assunto da pergunta aparece aqui</div>
+                <div id="msg2-author">
+                    Carlos Henrique Santos
+                </div>
+                <div id="msg2-text">
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                </div>
+                <div id="like2">
+                    <img src="./assets/imgs/more.png">
+                    <img id="btn-like2" src="assets/imgs/like.png">
+                    <p id="valor-likes2">1 like</p>
+                    <p>1 resposta</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://galoa.com.br/" target="_blank"><img src="assets/imgs/footer.png" /></a>
+            <a href="https://galoa.com.br/" target="_blank"><img src="assets/imgs/footer-responsivo.png" /></a>
+        </footer>
+        
+        
+        
+
 
     
 
@@ -271,7 +317,38 @@
             formu.style.display = 'none';
             enviado.style.display = 'block'
         }
+    });
+
+    //Novo tópico
+    let enviado2 = document.getElementById('enviado');
+    let novo = document.getElementById('novo');
+    let criar2 = document.getElementById('criar-post');
+    let novopost2 = false;
+    novo.addEventListener('click', function(){
+        novopost2 = true;
+        if(novopost2 == true){
+            enviado2.style.display = 'none';
+            criar2.style.display = 'block';
+        }
+    });
+
+    //Contabilizar o número de likes
+    let like = document.getElementById('btn-like');
+    let n = 1;
+    let valorlikes = document.getElementById('valor-likes');
+    like.addEventListener('click', function(){
+        n ++;
+        valorlikes.innerHTML = `${n} likes`;
     })
+
+    let like2 = document.getElementById('btn-like2');
+    let n2 = 1;
+    let valorlikes2 = document.getElementById('valor-likes2');
+    like2.addEventListener('click', function(){
+        n2 ++;
+        valorlikes2.innerHTML = `${n2} likes`;
+    })
+
     </script>
 </body>
 </html>

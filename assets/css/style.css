@@ -559,7 +559,7 @@ main-title{
     cursor: pointer;
   }
 
-  #enviado p:nth-child(5){
+  #enviado p:nth-child(6){
     font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
@@ -568,7 +568,7 @@ main-title{
   color: #707070;
   }
 
-  #enviado p:nth-child(6){
+  #enviado p:nth-child(7){
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
@@ -581,6 +581,9 @@ main-title{
   }
 
   #novo{
+    padding-top: 5px;
+    width:235px ;
+    height: 32px;
     margin-left: auto;
     margin-right: auto; 
     align-items: center;
@@ -588,9 +591,135 @@ main-title{
     background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
+    vertical-align: middle;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
   }
 
+  #forum{
+      width: 860px;
+      margin-top: 15px;
+      margin-left: 260px;
+  }
 
+  #msg1{
+    width: 860px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: inline;
+  }
+
+  #msg1-title{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;    
+    color: #ED7839;
+  }
+
+  #msg1-author{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-bottom: 10px;
+  }
+
+  #msg1-text{
+    max-width: 860px;
+    width: 860px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-bottom: 10px;
+  }
+
+  #like p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 19px;    
+    color: #757575;
+    display: inline;
+    padding-left: 10px;
+  }
+
+  #btn-like{
+      cursor: pointer;
+  }
+
+  
+  #msg2{
+    max-width: 860px;
+    width: 860px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: inline;
+  }
+
+  #msg2-title{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;    
+    color: #ED7839;
+  }
+
+  #msg2-author{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-bottom: 10px;
+  }
+
+  #msg2-text{
+    max-width: 860px;
+    width: 860px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-bottom: 10px;
+  }
+
+  #like2 p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 19px;    
+    color: #757575;
+    display: inline;
+    padding-left: 10px;
+  }
+
+  #btn-like2{
+      cursor: pointer;
+  }
 
 /* Menu no modo responsivo */
 #sidemenu {
@@ -727,6 +856,15 @@ ul li a:visited{
     color: #FFFFFF;
 }
 
+footer{
+    width: auto;
+    margin-left: 260px;
+}
+
+footer a:nth-child(2){
+    display: none;
+}
+
 /* Media queries */
 @media (max-width: 1268px) {
     #evento h3{
@@ -740,6 +878,44 @@ ul li a:visited{
     }
     #detalhes{
         display: none;
+    }
+
+    footer{
+        margin: 0px;
+    }
+    
+    
+    footer a:nth-child(1){
+            display: none;
+    }
+    
+    footer a:nth-child(2){
+        align-items: center;
+            text-align: center;
+            justify-content: center;
+        display: block;
+    }
+
+    
+    #forum{
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-left: 260px;
+    }
+
+    #msg1-text{
+        white-space: normal;
+        width: auto;
+        overflow: auto;
+    }
+
+    #msg2-text{
+        white-space: normal;
+        width: auto;
+        overflow: auto;
     }
 }
 
@@ -951,4 +1127,47 @@ ul li a:visited{
         border-radius: 3px;
     }
 
+    #resumo{
+        margin-left: 0px;
+    }
+
+    #discussao{
+        margin-left: 0px;
+
+    }
+    #forum{
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    #msg1-text{
+        white-space: normal;
+        width: auto;
+        overflow: auto;
+    }
+
+    #msg2-text{
+        white-space: normal;
+        width: auto;
+        overflow: auto;
+    }
+
+footer{
+    margin: 0px;
+}
+
+
+footer a:nth-child(1){
+        display: none;
+}
+
+footer a:nth-child(2){
+    align-items: center;
+        text-align: center;
+        justify-content: center;
+    display: block;
 }
